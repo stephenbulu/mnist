@@ -1,5 +1,5 @@
 
-import {Data} from './data.js';
+import {TrainingData} from './data.js';
 
 
 async function showExamples(data) {
