@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .header{
+      overflow: hidden;
+      margin-left: -100px;
+      margin-top: 0px;
+      width:100%;
+      height:35px;
+      padding-left:120px;
+      padding-top: 10px;
+      font-size:20px;
+      background-color:#555555;
+    }
+    a:link { text-decoration: none;color:white; }
+    a:visited { text-decoration: none;color:white; }
+    a:hover { text-decoration: none;color:black; }
+    a:active { text-decoration: none;color:white; }
+    #predContainer{
+      height:300px;
+      vertical-align: top;
+      display: inline-block;
+    }
+    #pred{
+      font-size: 40px;
+      display: inline-block;
+    }
+    #drawCanvas{
+      
+      image-rendering: pixelated; 
+      image-rendering: crisp-edges;
+      width:300px;
+      height:300px;
+      background-color: black;
+    }
+    .box{
+      display:inline-block;
+      font-size: 25px;
+      width: 30px;
+      height: 30px;
+      margin: 2px;
+      border: 1px solid black;
+    }
+    #layer1{
+      clear:both;
+      display:inline-block;
+      width: 500px;
+    }
+    .featureCanvas{
+      image-rendering: pixelated; 
+      image-rendering: crisp-edges;
+      width:50px;
+      height:50px;
+      border:1px solid #a5c085;
+    }
+    .layer1outputCanvas{
+      image-rendering: pixelated; 
+      image-rendering: crisp-edges;
+      border:1px solid #24c5c5;
+      width:96px;
+      height:96px;
+    }
+    .layer2outputCanvas{
+      image-rendering: pixelated; 
+      image-rendering: crisp-edges;
+      border:2px solid #24c5c5;
+      width:48px;
+      height:48px;
+    }
+    .layer3outputCanvas{
+      image-rendering: pixelated; 
+      image-rendering: crisp-edges;
+      border:2px solid #24c5c5;
+      width:48px;
+      height:48px;
+    }
+    #layer1output{
+      clear:both;
+      display:inline-block;
+    }
+    #layer2{
+      clear:both;
+      display:inline-block;
+    }
+
+  </style>
+  <title>Input Model Prediction</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.1.0/dist/tf.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.1.0/dist/tfjs-vis.umd.min.js"></script>
+
+  <script src="data.js" type="module"></script>
+
+  <script src="script.js" type="module"></script>
+
+</head>
+
+<body>
+  <div class= "header"><a href="./index.html">Machine Learning Charts</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="./live.html">Test with new data</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="./data.html">See Data</a></div>
+  <h2>&nbsp;&nbsp;Click and draw a digit on black canvas </h2>
+</body>
+</html> 
